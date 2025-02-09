@@ -1,0 +1,217 @@
+.reviews-section
+{
+    width: 100%;
+    height: 80vh;
+    background-color: #0E0D0A;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 35% 20% 45%;
+}
+.reviews-sectionabout
+{
+    width: 100%;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 35% 20% 45%;
+}
+.reviews-section-one
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    font-family: "Mrs Saint Delafield",cursive;
+    font-size: 55px;
+    line-height: 35px;
+    color: #B58C67;
+}
+.reviews-section-two
+{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+}
+.reviews-section-two-left
+{
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+.slick-prev:before, .slick-next:before
+{
+    display: none;
+}
+.reviews-section-two-right
+{
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+.reviews-section-two-left svg
+{
+    width: 65%;
+    cursor: pointer;
+    height: 65%;
+    cursor: pointer;
+}
+.reviews-section-two-right svg
+{
+    width: 65%;
+    cursor: pointer;
+    height: 65%;
+    cursor: pointer;
+}
+.reviews-section-two-slider
+{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 20px 20px;
+}
+.reviews-section-two-center
+{
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 300;
+    line-height: 1.5em;
+}
+.reviews-section-two-center-two
+{
+    font-family: Jost, sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #fff;
+    font-size: 11px;
+    line-height: 1.13889em;
+    letter-spacing: .10em;
+    padding: 25px 0;
+}
+.reviews-section-two-center-two .reviews-section-two-center-one-slach
+{
+    position: relative;
+    width: 12px;
+    height: 12px;
+    margin: 0 15px;
+}
+.reviews-section-two-center-two .reviews-section-two-center-one-slach::before
+{
+    content: '';
+    width: 12px;
+    height: 12px;
+    background-color: transparent;
+    border: 1px solid #B58C67;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(10deg);
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+}
+
+.dots-slider-index
+{
+    width: 100%;
+    height: 10px;
+}
+
+.slick-dots li button
+{
+    width: 20px;
+    height: 20px;
+}
+
+.slick-dots li button::before{
+    content: '';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: scale(.5);
+    background-color: var(--brown);
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+.slick-active button::after
+{
+    content: '';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: var(--brown);
+    border-radius: 50%;
+    transition: .7s ease;
+    cursor: pointer;
+    border-radius: 0;
+    transform: rotate(45deg);
+    background-color: transparent;
+    border: 1px solid var(--brown);
+    animation: rotate-active .5s alternate;
+    transition: .5s;
+}
+@keyframes rotate-active
+{
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(45deg)
+    }
+}
+.slick-dots li button:hover::before
+{
+    border-radius: 0;
+    transform: rotate(45deg);
+    background-color: transparent;
+    border: 1px solid var(--brown);
+    transition: .5s;
+}
+.slick-dots li.slick-active button::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: scale(.5);
+    background-color: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+}
+@media only screen and (max-width: 767px)
+{
+    .reviews-section-two
+    {
+        grid-template-columns: 1fr;
+    }
+    .reviews-section-two-left
+    {
+        display: none;
+    }
+    .reviews-section-two-right
+    {
+        display: none;
+    }
+    .reviews-section
+    {
+        height: 70vh;
+    }
+    .reviews-sectionabout
+    {
+        height: 70vh;
+    }
+}
+::selection {
+    background-color: #B58C67;
+    color: #fff;
+}

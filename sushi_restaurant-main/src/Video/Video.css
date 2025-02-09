@@ -1,0 +1,43 @@
+.video-section
+{
+    width: 100%;
+    height: auto;
+    padding: 50px 17px;
+    background-color: #0E0D0A;
+}
+.video-section-one
+{
+    width: 100%;
+    background-color: #000000;
+    border: 1px solid #B58C6752;
+    padding: 25px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.video-section-one img
+{
+    width: 14%;
+    height: 12%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.video-section-one video
+{
+    max-width: 100%;
+}
+@media only screen and (max-width: 767px)
+{
+    .video-section-one
+    {
+        padding: 8px;
+    }
+    .video-section-one img
+{
+        width: 35%;
+        height: 26%;
+    }
+}

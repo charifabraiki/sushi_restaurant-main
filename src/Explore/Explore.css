@@ -1,0 +1,217 @@
+.explore-section
+{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    padding: 50px 0;
+    background-color: #0E0D0A;
+}
+
+.explore-section-one
+{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    font-family: Jost, sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 12px;
+    line-height: 1.91667em;
+    font-weight: 400;
+    letter-spacing: .15em;
+    margin: 25px 0;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.explore-section-two
+{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 45% 10% 45%;
+    font-family: "Cormorant", sans-serif;
+    font-weight: 400;
+    font-size: 61px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.explore-section-two-center-side
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.explore-section-two-center-side img
+{
+    cursor: pointer;
+}
+.explore-section-two-left-side
+{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 0 10px;
+}
+.explore-section-two-right-side
+{
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    justify-content: start;
+    padding: 0 10px;
+}
+
+.explore-section-three
+{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 0.8fr 1fr;
+    font-family: "Cormorant", sans-serif;
+    font-weight: 400;
+    font-size: 61px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.explore-section-three-left-side
+{
+    display: flex;
+    align-items: start;
+    justify-content: end;
+}
+.explore-section-three-right-side
+{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+.explore-section-three-center-side
+{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 17px;
+}
+.explore-section-four
+{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 55% 10% 35%;
+    font-family: "Cormorant", sans-serif;
+    font-weight: 400;
+    font-size: 61px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.explore-section-four-left-side
+{
+    display: flex;
+    align-items: start;
+    gap: 17px;
+    justify-content: end;
+}
+.explore-section-four-center-side
+{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+.explore-section-four-right-side
+{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+
+.spanHover span{
+    transition: 1s;
+}
+.spanHover span:hover{
+    color: #dddd;
+}
+
+.explore-section-five
+{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.explore-section-five-left-side
+{
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    font-family: "Cormorant", sans-serif;
+    font-weight: 400;
+    font-size: 61px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.explore-section-five-right-side
+{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    padding-left: 18px;
+}
+
+
+
+@media only screen and (max-width: 767px)
+{
+    .explore-section-two-center-side
+    {
+        justify-content: start;
+        align-items: start;
+    }
+    .explore-section-two-left-side
+    {
+        justify-content: center;
+        align-items: start;
+        font-size: 45px;
+    }
+    .explore-section-two-right-side
+    {
+        justify-content: center;
+        font-size: 45px;
+        align-items: end;
+        width: 100vw;
+    }
+    .explore-section-two
+    {
+        grid-template-columns: 65% 35%;
+    }
+    .explore-section-three
+    {
+        align-items: center;
+        grid-template-columns: 25% 75%;
+    }
+    
+    .explore-section-three-center-side
+    {
+        font-size: 45px;
+    }
+    .explore-section-three-right-side
+    {
+        width: 100vw;
+        justify-content: center;
+    }
+    .four-display-none
+    {
+        display: none;
+    }
+    .explore-section-four
+    {
+        grid-template-columns: 1fr 1fr 1fr;
+        font-size: 45px;
+    }
+    .explore-section-five-left-side
+    {
+        font-size: 45px;
+    }
+}

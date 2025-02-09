@@ -1,0 +1,568 @@
+.aboutus-section
+{
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.aboutus-section-all
+{
+    width: 100%;
+    background-color: #102B2A;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 2;
+}
+
+.aboutus-section-all .contactus-section-before
+{
+    z-index: -1;
+    width: 1px;
+    height: calc(100% - 50px);
+    background-color: #abb8c336;
+    position: absolute;
+    left: 33.33%;
+    top: 0;
+    bottom: 0;
+}
+.aboutus-section-all .contactus-section-before::before
+{
+    content: '';
+    width: 100%;
+    height: 70px;
+    background-color: #abb8c357;
+    position: absolute;
+    top: 0;
+    animation: beforeUpDown 6s infinite alternate-reverse;
+}
+@keyframes beforeUpDown{
+    from{
+        top: 0;
+    }
+    from{
+        top: calc(100% - 100px);
+    }
+}
+.aboutus-section-all .contactus-section-after::before
+{
+    content: '';
+    width: 100%;
+    height: 70px;
+    background-color: #abb8c357;
+    position: absolute;
+    top: 0;
+    animation: beforeUpDown 6s infinite alternate-reverse;
+}
+.aboutus-section-all .contactus-section-after
+{
+    z-index: -1;
+    width: 1px;
+    height: calc(100% - 50px);
+    background-color: #abb8c336;
+    position: absolute;
+    right: 33.33%;
+    top: 0;
+    bottom: 0;
+}
+.menu-food-section-about
+{
+    width: 100%;
+    height: 65vh;
+    background: url('../sushi_project_images/sushi_landing_humberger_bg.jpg');
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 80%;
+}
+
+.navbar-menu-mobile-aboutus
+{
+    width: 100%;
+    z-index: 2000;
+    position: absolute;
+    background-color: #102B2A;
+    left: 0;
+    right: 0;
+    top: 75px;
+    border: 1px solid #ced8d825;
+    display: flex;
+    align-items: center;
+    padding: 32px;
+    animation: show-mobile 1.5s alternate;
+    overflow: hidden;
+}
+
+.navbar-menu-mobile-aboutus div{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+}
+.navbar-menu-mobile-aboutus div li
+{
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+    animation: show-li 1s alternate ease-out;
+}
+
+@keyframes show-li
+{
+    from
+    {
+        opacity: 0;
+    }
+    to
+    {
+        opacity: 1;
+    }
+}
+
+.navbar-menu-mobile-aboutus div li::before
+{
+    content: '';
+    width: 10px;
+    height: 10px;
+    border: 1px solid #B58C67;
+    background-color: transparent;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    border-left: none;
+    border-bottom: none;
+    transform: translateY(-50%) rotate(45deg);
+}
+.navbar-menu-mobile-aboutus div li a
+{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: Jost, sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 300;
+    padding: 5px 0;
+    position: relative;
+}
+.navbar-menu-mobile-aboutus div li a::after
+{
+    content: '';
+    width: 0;
+    height: 1px;
+    background-color: #B58C67;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: .4s;
+}
+.navbar-menu-mobile-aboutus div li:hover a::after
+{
+    width: 100%;
+}
+.aboutus-section-two
+{
+    width: 95%;
+    margin: 0 auto;
+    padding: 110px 0 200px 0;
+    display: grid;
+    grid-template-columns: 0.9fr 1fr;
+}
+.aboutus-section-two-one
+{
+    width: 100%;
+}
+.aboutus-section-two-one img
+{
+    border-top-left-radius: 200px;
+    width: 87%;
+}
+.aboutus-section-two-two
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.aboutus-section-two-two-one
+{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.aboutus-section-two-two-one h1
+{
+    font-family: Jost, sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #fff;
+    font-size: 40px;
+    line-height: 1.13889em;
+    letter-spacing: .15em;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;  
+}
+.aboutus-section-two-two-one p
+{
+    font-family: Jost, sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #CED8D8;
+    font-size: 16px; 
+    letter-spacing: .05em;
+}
+.aboutus-section-two-two-two
+{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.aboutus-section-two-two-two-one
+{
+    width: 100%;
+    align-self: flex-end;
+    position: relative;
+}
+
+.aboutus-section-two-two-two-one::after
+{
+    content: "The art of French cooking";
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    color: #C49871;
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 500;
+    transform: rotate(-8deg) translateY(30px);
+    animation: bounceUp 3s alternate infinite ease-in-out;
+    position: absolute;
+    bottom: 0;
+    right: -70%;
+}
+@keyframes bounceUp{
+    from
+    {
+        transform: rotate(-8deg) translateY(30px);
+    }
+    to
+    {
+        transform: rotate(-8deg) translateY(50px);
+    }
+}
+.aboutus-section-two-two-two-one img
+{
+    width: 90%;
+}
+.aboutus-section-two-two-two-two
+{
+    width: 100%;
+    align-self: center;
+}
+.aboutus-section-two-two-two-two-one
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: -100px;
+    gap: 10px;
+}
+.aboutus-section-two-two-two-two-one h3
+{
+    font-family: Jost, sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.13889em;
+    letter-spacing: .15em;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word; 
+}
+.aboutus-section-two-two-two-two-one span
+{
+    font-family: Jost, sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.13889em;
+    letter-spacing: .15em;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word; 
+}
+.aboutus-section-three
+{
+    background-color: #1F3634;
+    display: grid;
+    grid-template-columns: 0.7fr 1fr;
+}
+.aboutus-section-three-one
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+    box-sizing: border-box;
+    padding: 0 40px;
+}
+.aboutus-section-three-one h1
+{
+    font-family: Jost, sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #fff;
+    font-size: 45px;
+    line-height: 1.13889em;
+    letter-spacing: .15em;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word; 
+}
+.aboutus-section-three-one p
+{
+    font-family: Jost, sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #fff;
+    font-size: 12px;
+    line-height: 2em;
+    letter-spacing: .15em;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word; 
+}
+.aboutus-section-three-two
+{
+    width: 100%;
+}
+.aboutus-section-three-two img
+{
+    width: 100%;
+    transform: translateY(-35px);
+}
+.aboutus-section-four
+{
+    width: 100%;
+    padding: 100px 0 20px 0;
+}
+.aboutus-section-four h1
+{
+    font-family: Jost, sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+    line-height: 1.13889em;
+    letter-spacing: .15em;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word; 
+}
+.aboutus-section-four p
+{
+    width: 40%;
+    margin: 0 auto;
+    font-family: Jost, sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    line-height: 2em;
+    letter-spacing: .15em;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word; 
+}
+.aboutus-section-four-book-one-infos
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 30px 0;
+    box-sizing: border-box;
+}
+.aboutus-section-four-book-one-infos h2
+{
+    font-family: Jost, sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.13889em;
+    letter-spacing: .15em;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word; 
+}
+.aboutus-section-four-book-one-infos span
+{
+    font-family: Jost, sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #CED8D8;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.13889em;
+    letter-spacing: .15em;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word; 
+}
+.aboutus-section-four-book
+{
+    padding: 60px 0;
+    width: 85%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 110px;
+}
+.aboutus-section-four-book-one
+{
+    width: 100%;
+}
+.aboutus-section-four-book-one-image
+{
+    width: 100%;
+}
+.aboutus-section-four-book-one-image img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.aboutus-section-four-book-one-image-five
+{
+    width: 100%;
+}
+.aboutus-section-four-book-one-image-five img
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 15vmax 15vmax 0 0;
+    object-fit: cover;
+}
+.aboutus-section-five
+{
+    width: 100%;
+    height: 80vh;
+    background-image: url('../sushi_project_images/about_seven.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.aboutus-section-five svg:hover
+{
+    cursor: pointer;
+}
+@media only screen and (max-width: 767px)
+{
+    .aboutus-section-five
+    {
+        height: 65vh;
+    }
+    .aboutus-section-all .contactus-section-before
+    {
+        display: none;
+    }
+    .aboutus-section-all .contactus-section-after
+    {
+        display: none;
+    }
+    .aboutus-section-four h1
+    {
+        font-size: 35px;
+    }
+    .aboutus-section-four-book
+    {
+        width: 90%;
+        grid-template-columns: 1fr;
+        grid-gap: 40px;
+    }
+    .aboutus-section-four p
+    {
+        width: 90%;
+        padding: 10px;
+    }
+    .aboutus-section-two-two
+    {
+        gap: 25px;
+    }
+    .aboutus-section-three-one
+    {
+        grid-row: 2/3;
+    }
+    .aboutus-section-three-two
+    {
+        grid-row: 1/2;
+        box-sizing: border-box;
+        padding: 0 0 0 40px;
+    }
+    .aboutus-section-two-two-two-one::after
+    {
+        font-size: 40px;
+        right: -7%;
+        width: 60%;
+    }
+    .aboutus-section-three
+    {
+        grid-template-columns: 1fr;
+        padding: 0 0 50px 0;
+    }
+    .aboutus-section-two
+    {
+        width: 90%;
+        grid-template-columns: 1fr;
+        grid-gap: 40px;
+        padding: 100px 0 180px 0;
+    }
+    .aboutus-section-two-two-two
+    {
+        grid-template-columns: 1fr;
+    }
+    .aboutus-section-two-two-two-one img
+    {
+        width: 92%;
+    }
+    .aboutus-section-two-two-one h1
+    {
+        font-size: 35px;
+    }
+    .aboutus-section-three-one h1
+    {
+        font-size: 35px;
+    }
+    .aboutus-section-three-one p
+    {
+        font-size: 12px;
+        line-height: 1.5em;
+    }
+    .aboutus-section-two-two-one p
+    {
+        font-size: 13px;
+    }
+    .aboutus-section-two-two-one
+    {
+        padding: 0;
+    }
+    .aboutus-section-two-one img
+    {
+        width: 100%;
+    }
+    .aboutus-section
+    {
+        padding: 0;
+    }
+    .menu-food-section-about
+    {
+        height: 55vh;
+    }
+}

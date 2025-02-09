@@ -1,0 +1,205 @@
+.contact-section
+{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 55% 45%;
+    padding: 0 17px;
+    background-color: #0E0D0A;
+}
+.contact-cur
+{
+    cursor: pointer;
+}
+.contact-section-one
+{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 0.5fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+}
+.contact-section-one-one
+{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    background-image: url('../sushi_project_images/eat_one.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.contact-section-one-two
+{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-image: url('../sushi_project_images/flower_one.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.contact-section-one-three
+{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    background-image: url('../sushi_project_images/place_two.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.contact-section-one-four
+{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-image: url('../sushi_project_images/eat_four.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.contact-section-one-five
+{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    background-image: url('../sushi_project_images/eat_three.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.contact-section-one-six
+{
+    grid-column: 4/5;
+    grid-row: 1/3;
+    background-image: url('../sushi_project_images/eat_two.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.contact-section-two
+{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 130px 0;
+}
+.contact-section-two-one{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.contact-section-two-one-ex{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.contact-section-two-one::after
+{
+    content: '';
+    width: 1px;
+    background-color: rgba(255,255,255,.3);
+    height: 50%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.contact-section-two-one-title
+{
+    font-family: Jost, sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 2px;
+    line-height: 1.5rem;
+}
+.contact-section-two-one-para
+{
+    font-family: Jost, sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #cecece;
+    font-size: 14px;
+    line-height: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.contact-section-two-one-para span
+{
+    transition: .7s;
+    cursor: pointer;
+}
+.contact-section-two-one-para span:hover
+{
+    color: #fff;
+}
+@media only screen and (max-width: 767px)
+{
+    .contact-section-two-one
+    {
+        margin: 20px 0;
+    }
+    .contact-section-two-one-ex
+    {
+        margin: 20px 0;
+    }
+    .contact-section-one
+    {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .contact-section-one-one
+    {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .contact-section-one-two
+    {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .contact-section-one-three
+    {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .contact-section-one-four
+    {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .contact-section-one-five
+    {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .contact-section-one-six
+    {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    .contact-section
+    {
+        height: 200vh;
+        grid-template-rows: 50% 50%;
+    }
+    .contact-section-two
+    {
+        grid-template-columns: 1fr;
+        padding: 50px 0;
+    }
+    .contact-section-two-one::after
+    {
+        width: 0;
+    }
+    .contact-section-two-one-para
+    {
+        font-size: 13px;
+    }
+
+}

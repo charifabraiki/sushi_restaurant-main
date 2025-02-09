@@ -1,0 +1,220 @@
+/* Styles globaux */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  /* Conteneur principal */
+  .admin-panel {
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  table th, table td {
+    padding: 10px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  table th {
+    background-color: #9ceb8a;
+    color: #fff;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Boutons dans les colonnes */
+  button {
+    cursor: pointer;
+    border: none;
+    padding: 5px;
+    background-color: transparent;
+  }
+  
+  button svg {
+    transition: transform 0.2s ease;
+  }
+  
+  button:hover svg {
+    transform: scale(1.2);
+  }
+  
+  /* Formulaire d'édition */
+  .edit-form {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .edit-form h2 {
+    margin-top: 0;
+  }
+  
+  .edit-form label {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  .edit-form label input,
+  .edit-form label textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .edit-form label input[type="checkbox"] {
+    display: inline-block;
+    width: auto;
+    margin-left: 10px;
+  }
+  
+  .edit-form button {
+    padding: 10px 15px;
+    border-radius: 4px;
+    border: none;
+    background-color: #9ceb8a;
+    color: white;
+    font-size: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .edit-form button:hover {
+    background-color: #9ceb8a;
+  }
+  
+  .edit-form button[type="button"] {
+    background-color: #6c757d;
+  }
+  
+  .edit-form button[type="button"]:hover {
+    background-color: #5a6268;
+  }
+  
+
+ /* Animation pour la popup */
+.edit-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 500px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    z-index: 1000;
+    animation: fadeSlideIn 0.4s ease forwards;
+  }
+  
+  .edit-form.closing {
+    animation: fadeSlideOut 0.4s ease forwards;
+  }
+  
+  /* Fond semi-transparent */
+  .edit-form::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+  }
+  
+  /* Animations */
+  @keyframes fadeSlideIn {
+    from {
+      opacity: 0;
+      transform: translate(-50%, -60%);
+    }
+    to {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+    }
+  }
+  
+  @keyframes fadeSlideOut {
+    from {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+    }
+    to {
+      opacity: 0;
+      transform: translate(-50%, -60%);
+    }
+  }
+  
+  /* Styles des titres et champs */
+  .edit-form h2 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    text-align: center;
+    color: #333;
+  }
+  
+  .edit-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .edit-form input,
+  .edit-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+  }
+  
+  .edit-form button {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .edit-form button[type="button"] {
+    background-color: #f44336;
+  }
+  
+  .edit-form button:hover {
+    opacity: 0.9;
+  }

@@ -1,0 +1,311 @@
+.meet-chef-section-all
+{
+    width: 100%;
+    background-color: #102B2A;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 2;
+}
+.meet-chef-section-all .contactus-section-before
+{
+    z-index: -1;
+    width: 1px;
+    height: calc(100% - 50px);
+    background-color: #abb8c336;
+    position: absolute;
+    left: 33.33%;
+    top: 0;
+    bottom: 0;
+}
+.meet-chef-section-all .contactus-section-before::before
+{
+    content: '';
+    width: 100%;
+    height: 70px;
+    background-color: #abb8c357;
+    position: absolute;
+    top: 0;
+    animation: beforeUpDown 6s infinite alternate-reverse;
+}
+@keyframes beforeUpDown{
+    from{
+        top: 0;
+    }
+    from{
+        top: calc(100% - 100px);
+    }
+}
+.meet-chef-section-all .contactus-section-after::before
+{
+    content: '';
+    width: 100%;
+    height: 70px;
+    background-color: #abb8c357;
+    position: absolute;
+    top: 0;
+    animation: beforeUpDown 6s infinite alternate-reverse;
+}
+.meet-chef-section-all .contactus-section-after
+{
+    z-index: -1;
+    width: 1px;
+    height: calc(100% - 50px);
+    background-color: #abb8c336;
+    position: absolute;
+    right: 33.33%;
+    top: 0;
+    bottom: 0;
+}
+.menu-food-section-meet
+{
+    width: 100%;
+    height: 65vh;
+    background: url('../sushi_project_images/chef_one.jpg');
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 80%;
+}
+.meet-chef-section-all-one
+{
+    width: 97%;
+    margin: 0 auto;
+    padding: 140px 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.meet-chef-section-all-one-left
+{
+    width: 100%;
+    position: relative;
+}
+.meet-chef-section-all-one-left::before
+{
+    content: '';
+    width: 34%;
+    height: 44%;
+    background-image: url('../sushi_project_images/chef_three.jpg');
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    animation: chefimg 2s infinite alternate;
+}
+@keyframes chefimg{
+    from
+    {
+        top: 45%;
+    }
+    to
+    {
+        top: 50%;
+    }
+}
+.meet-chef-section-all-one-left img
+{
+    width: 84%;
+}
+.meet-chef-section-all-one-right
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+    padding: 0 50px;
+    gap: 15px;
+    box-sizing: border-box;
+}
+.meet-chef-section-all-one-right h1
+{
+    font-family: cormorant;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #ffffff29;
+    font-size: 70px;
+    line-height: 1.13889em;
+    letter-spacing: .15em;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;  
+}
+.meet-chef-section-all-one-right h4
+{
+    font-family: Jost, sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #fff;
+    font-size: 30px;
+    line-height: 1.13889em;
+    letter-spacing: .15em;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;  
+}
+.meet-chef-section-all-one-right p
+{
+    font-family: Jost, sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #ced8d8;
+    font-size: 15px;
+    line-height: 1.3em;
+    letter-spacing: .08em;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;  
+}
+.meet-chef-section-all-one-right span
+{
+    font-family: Jost, sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #fff;
+    font-size: 13px;
+    line-height: 1.3em;
+    letter-spacing: .08em;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;  
+}
+.meet-chef-section-all-two
+{
+    width: 100%;
+    background-color: #1F3634;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 140px 100px;
+}
+.meet-chef-section-all-two-left
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 15px;
+}
+.meet-chef-section-all-two-left h1
+{
+    font-family: cormorant;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #ffffff29;
+    font-size: 70px;
+    line-height: 1.13889em;
+    letter-spacing: .15em;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;  
+}
+.meet-chef-section-all-two-left h4
+{
+    font-family: Jost, sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #fff;
+    font-size: 30px;
+    line-height: 1.13889em;
+    letter-spacing: .15em;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;  
+}
+.meet-chef-section-all-two-left-trofies
+{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+}
+.meet-chef-section-all-two-left-trofies h5
+{
+    font-family: Jost, sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #ced8d8;
+    font-size: 15px;
+    gap: 10px; 
+    display: flex;
+    flex-direction: column;
+}
+.meet-chef-section-all-two-right
+{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    position: relative;
+}
+.meet-chef-section-all-two-right::after
+{
+    content: "Book private dining & banquet rooms";
+    width: 50%;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    color: #C49871;
+    font-size: 30px;
+    font-weight: 600;
+    transform: rotate(-8deg) translateY(30px);
+    animation: bounceUp 3s alternate infinite ease-in-out;
+    position: absolute;
+    bottom: 0;
+    left: -10%;
+}
+.meet-chef-section-all-two-right img
+{
+    width: 90%;
+    border-radius: 15vmax 0 0 0;
+}
+@media only screen and (max-width: 767px)
+{
+    .meet-chef-section-all-two-right img
+    {
+        width: 100%;
+    }
+    .meet-chef-section-all-two-right::after
+    {
+        width: 70%;
+        left: 0;
+    }
+    
+    .meet-chef-section-all .contactus-section-before
+    {
+        display: none;
+    }
+    .meet-chef-section-all .contactus-section-after
+    {
+        display: none;
+    }
+    .meet-chef-section-all-two
+    {
+        grid-template-columns: 1fr;
+        padding: 100px 6%;
+        grid-gap: 80px;
+    }
+    .menu-food-section-meet
+    {
+        height: 55vh;
+    }
+    .meet-chef-section-all-one
+    {
+        width: 90%;
+        grid-template-columns: 1fr;
+        grid-gap: 80px;
+        padding: 100px 0;
+    }
+    .meet-chef-section-all-one-right
+    {
+        grid-row: 1/2;
+        padding: 0;
+    }
+    .meet-chef-section-all-one-left
+    {
+        grid-row: 2/3;
+    }
+    .meet-chef-section-all-one-left img
+    {
+        width: 87%;
+    }
+    .meet-chef-section-all-one-right span
+    {
+        margin-top: -50px;
+        font-size: 12px;
+    }
+}
